@@ -1,0 +1,24 @@
+$largeDesktopMargin: calc((100% - 1142px) / 2);
+$smallDesktopMargin: calc((100% - 948px) / 2);
+
+//Small Desktop
+@mixin media-smallDesktop {
+	@media (min-width: 992px) and (max-width: 1199.98px) {
+		@content;
+	}
+}
+
+//Large Desktop
+@mixin media-largeDesktop {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
