@@ -1,0 +1,24 @@
+.fixedLeft, .fixedRight {
+	position: fixed;
+	z-index: 1002;
+}
+
+.fixedLeft {
+	@include media-largeDesktop {
+		left: $largeDesktopMargin;
+	}
+
+	@include media-smallDesktop {
+		left: $smallDesktopMargin;
+	}
+}
+
+.fixedRight {
+	@include media-largeDesktop {
+		right: $largeDesktopMargin;
+	}
+
+	@include media-smallDesktop {
+		right: $smallDesktopMargin;
+	}
+}
