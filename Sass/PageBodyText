@@ -1,3 +1,5 @@
+@import 'variablesAndMixins.scss';
+
 .bodyText {
 	@include media-largeDesktop {
 		margin-right: $largeDesktopMargin;
