@@ -1,0 +1,6 @@
+//To use the narrow header also on pages where only the narrow header should display:
+.mainHeaderSection.onlyNarrow {
+	.narrowHeader {
+		opacity: 1;
+	}
+}
