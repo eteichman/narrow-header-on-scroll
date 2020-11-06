@@ -1,0 +1,83 @@
+.dynamicHeader {
+  max-height: 300px;
+  margin-top: 30px; }
+
+.mainHeaderSection .fixedLeft, .mainHeaderSection .fixedRight {
+  margin-top: 25px; }
+
+.fixedLeft, .fixedRight {
+  position: fixed;
+  z-index: 1002; }
+
+@media (min-width: 1200px) {
+  .fixedLeft {
+    left: calc((100% - 1142px) / 2); } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .fixedLeft {
+    left: calc((100% - 948px) / 2); } }
+
+@media (min-width: 1200px) {
+  .fixedRight {
+    right: calc((100% - 1142px) / 2); } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .fixedRight {
+    right: calc((100% - 948px) / 2); } }
+
+.dynamicHeader .topStrip {
+  background-color: wheat;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001; }
+
+  .dynamicHeader .topStrip .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; }
+
+.wideHeader {
+  background-color: darkseagreen;
+  height: 270px; }
+
+  .wideHeader .bodyText {
+    padding-top: 100px; }
+
+.narrowHeader {
+  background-color: thistle;
+  height: 78px;
+  border-bottom: solid 1px #ccc;
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  opacity: 0; }
+
+a.disabled {
+  pointer-events: none;
+  cursor: default; }
+
+.centerText {
+  text-align: center; }
+
+body {
+  margin: 0; }
+
+@media (min-width: 1200px) {
+  .bodyText {
+    margin-right: calc((100% - 1142px) / 2);
+    margin-left: calc((100% - 1142px) / 2); } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .bodyText {
+    margin-right: calc((100% - 948px) / 2);
+    margin-left: calc((100% - 948px) / 2); } }
+
+/*To use the narrow header also on pages where only the narrow header should display*/
+.mainHeaderSection.onlyNarrow .narrowHeader {
+  opacity: 1; }
