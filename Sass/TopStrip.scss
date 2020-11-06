@@ -1,0 +1,13 @@
+.dynamicHeader .topStrip {
+	height: 30px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+
+	.container {
+		height: 100%;
+		@include flex;
+		align-items: center;
+	}
+}
